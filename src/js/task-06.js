@@ -32,7 +32,7 @@ inputEl.addEventListener('blur', onInputElBlur)
 
 
 function onInputElBlur(event) {
-    if (symbols === );
+    
 }
 
 

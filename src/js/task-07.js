@@ -3,4 +3,8 @@ const refs ={
     spanEl: document.querySelector('#text'),
 }
 
-refs.inputEl.style.fontSize
+refs.inputEl.addEventListener('input', changeFontSize);
+
+function changeFontSize(event) {
+    refs.spanEl.style.fontSize = `${event.currentTarget.value}px`
+};
