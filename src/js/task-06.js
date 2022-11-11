@@ -28,11 +28,11 @@ const inputEl = document.querySelector('#validation-input');
 const symbols = Namber(inputEl.dataset.length);
 
 
-inputEl.addEventListener('blur', onInputElBlur)
+inputEl.addEventListener('input', onInputElBlur)
 
 
 function onInputElBlur(event) {
-    
+   
 }
 
 
