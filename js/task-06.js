@@ -22,18 +22,18 @@
 // #validation-input.invalid {
 //   border-color: #f44336;
 
+const inputEl = document.querySelector("#validation-input");
 
-const inputEl = document.querySelector('#validation-input');
+const symbols = Number(inputEl.dataset.length);
 
-const symbols = Namber(inputEl.dataset.length);
+inputEl.addEventListener("input", onInputElBlur);
 
-
-inputEl.addEventListener('input', onInputElBlur)
-
-
-function onInputElBlur(event) {
-   
+function onInputElBlur() {
+  if (6 === this.value.length) {
+    this.classList.remove("invalid");
+    this.classList.add("valid");
+  } else {
+    this.classList.remove("valid");
+    this.classList.add("invalid");
+  }
 }
-
-
-

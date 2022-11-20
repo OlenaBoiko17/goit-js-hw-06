@@ -11,16 +11,19 @@ let counterValue = 0;
 
 const render = () => {
     refs.valueEl.textContent = counterValue;
+    console.log(counterValue)
 };
 
 const handleDecrementBtn = () => {
     counterValue -= 1;
     render();
+    
 };
 
 const handleIncrementBtn = () => {
     counterValue += 1;
     render();
+    
 };
 
 render();
