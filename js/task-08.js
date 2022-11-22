@@ -13,7 +13,7 @@ function processingFormData(event) {
     const formElements = event.currentTarget.elements;
 
     if(formElements.email.value.trim().length === 0 || formElements.password.value.trim().length === 0) {
-        return alerf('Заповніть поле!');
+        return alert('Заповніть поле!');
 
     } else {
         const formData = new FormData(event.currentTarget);
